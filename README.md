@@ -14,6 +14,6 @@ and there are certainly ways to implement this more elegantly. Feedback is welco
 
 ### Additional resources:
 
-Dave Hylands LCD info - especially to create characters [here](https://github.com/dhylands/python_lcd)
-Adafruit SPI MAX 31855 thermo reader based on [this](https://cdn-learn.adafruit.com/downloads/pdf/micropython-hardware-spi-devices.pdf) doc.
-Rotary encoder lib [here](https://github.com/SpotlightKid/micropython-stm-lib/blob/master/encoder/encoder.py)
+- Dave Hylands LCD info - especially to create characters [here](https://github.com/dhylands/python_lcd)
+- Adafruit SPI MAX 31855 thermo reader based on [this](https://cdn-learn.adafruit.com/downloads/pdf/micropython-hardware-spi-devices.pdf) doc.
+- Rotary encoder lib [here](https://github.com/SpotlightKid/micropython-stm-lib/blob/master/encoder/encoder.py)
