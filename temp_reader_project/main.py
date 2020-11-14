@@ -8,7 +8,6 @@ from aswitch import Switch, Pushbutton
 from encoder import Encoder
 from my_app import tempReader
 from esp8266_i2c_lcd import I2cLcd
-from rizzi_disp import custom_chr_maker, rizzi_run
 from bme280 import BME280
 from neopixel import NeoPixel
 
@@ -65,7 +64,7 @@ def switch_display():
     else:
         thermo.lcd_clear()
         lcd2_task = uasyncio.create_task(thermo.show_lcd())
-        try: # this is necessary b/c otherwise it throws an attribution error b/c blink3_task is a boolean before assignment
+        try: # this is necessary b/c otherwise it throws an attribution error b/c lcd2_task is a boolean before assignment
           lcd1_task.cancel()
         except:
           pass
@@ -93,7 +92,7 @@ async def main():
     switch.release_func(switch_display, ())
 
     uasyncio.create_task(thermo.blink()) # Or you might do this
-    uasyncio.create_task(thermo.temp())
+    #uasyncio.create_task(thermo.temp())
     uasyncio.create_task(thermo.temp_thermo())
     uasyncio.create_task(thermo.encoder_loop(enc))
 
