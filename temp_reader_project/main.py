@@ -76,12 +76,6 @@ async def nothing():
   await uasyncio.sleep_ms(2)
 
 
-# Rizzimatic - run welcome msg
-
-custom_chr_maker(lcd)
-rizzi_run(lcd)
-
-
 # Setup async app-run
 
 def set_global_exception():
